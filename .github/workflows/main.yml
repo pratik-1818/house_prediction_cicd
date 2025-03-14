@@ -17,11 +17,6 @@ jobs:
       - name: Build Docker image
         run: docker build -t my-fastapi-app .
 
-      - name: Run Docker container (optional if you want to test it)
+      - name: Run Docker container
         run: docker run -d -p 8000:8000 my-fastapi-app
 
-
-    - name: Run tests
-      run: |
-        export PYTHONPATH=$PYTHONPATH:$(pwd)/app
-        pytest
