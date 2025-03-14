@@ -1,7 +1,7 @@
 from fastapi.testclient import TestClient
 from app.main import app # If your app is inside 'app/main.py', change this to from app.main import app
 
-client = TestClient(main)
+client = TestClient(app)
 
 # ✅ Test for the root/home endpoint
 def test_home():
