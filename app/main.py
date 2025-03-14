@@ -4,7 +4,7 @@ import pickle
 import numpy as np
 
 # Load the trained model
-with open(r"C:\Users\Pratik Sharma\Desktop\house_prediction\house_price_model.pkl", "rb") as f:
+with open(r"house_price_model.pkl", "rb") as f:
     model = pickle.load(f)
 print("✅ Model loaded successfully")  # Add this line
 
